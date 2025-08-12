@@ -29,6 +29,7 @@
     // Function to load the selected script and reload the page
     function cargarScript(url) {
       localStorage.setItem('scriptSeleccionado', url);
+      console.log('Script selected and will be loaded on reload:', url); // Debugging message
       location.reload();
     }
 
