@@ -154,7 +154,7 @@
         cargarScript('https://wormturkio.com/new/game2.php');
       });
       document.getElementById('opcion3').addEventListener('click', function () {
-        cargarScript('https://wormturkio.com/new/game3.php');
+        cargarScript('https://muslimpowa1453.github.io/wormatefriendsturkey/game.js');
       });
     }
 
