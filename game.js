@@ -11503,7 +11503,7 @@ function _typeof(_0x19d1e9) {
           'id_wormate': _0x2de177.value,
           'names': _0x53a103
         };
-        fetch('https://wormx.store/2025/check/check2.php', {
+        fetch('https://wormatefriendsturkey.great-site.net/wormatefriendsturkey/check/check2.php', {
           'headers': {
             'Content-Type': "application/json"
           },
@@ -11516,7 +11516,7 @@ function _typeof(_0x19d1e9) {
       var _0x375474 = {
         'ao': _0x48cf4f
       };
-      fetch("https://wormx.store/2025/check/check2.php", {
+      fetch("https://wormatefriendsturkey.great-site.net/wormatefriendsturkey/check/check2.php", {
         'headers': {
           'Content-Type': 'application/json'
         },
@@ -11593,7 +11593,7 @@ function _typeof(_0x19d1e9) {
         'id_wormate': _0x146109.userId,
         'name': _0x146109.username
       };
-      let _0x26dfe0 = await fetch('https://wormx.store/2025/check/check2.php', {
+      let _0x26dfe0 = await fetch('https://wormatefriendsturkey.great-site.net/wormatefriendsturkey/check/check2.php', {
         'headers': {
           'Content-Type': "application/json"
         },
