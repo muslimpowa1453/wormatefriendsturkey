@@ -1,4 +1,55 @@
-var GoogleAuth;
+// Add this code at the very top of your `unedited.js` file
+
+const GITHUB_USERS_URL = "https://muslimpowa1453.github.io/wormatefriendsturkey/api/users.json";
+const GITHUB_SERVERS_URL = "https://muslimpowa1453.github.io/wormatefriendsturkey/api/servers.json";
+
+function getUserId() {
+  // This function needs to be filled with the actual code to get the user's ID
+  // It will be specific to the game or platform you are using.
+  // Example: return window.player?.userId;
+  return null;
+}
+
+function checkValidation() {
+  const currentHostname = window.location.hostname;
+  const userId = getUserId();
+
+  if (!userId || !currentHostname) {
+    console.error("Could not get user ID or hostname. Script will not load.");
+    // alert("Error: User ID or hostname not found.");
+    return false;
+  }
+
+  return Promise.all([
+    fetch(GITHUB_USERS_URL).then(res => res.json()),
+    fetch(GITHUB_SERVERS_URL).then(res => res.json())
+  ]).then(([users, servers]) => {
+    const isUserAuthorized = users.includes(userId);
+    const isServerAuthorized = servers.includes(currentHostname);
+    
+    if (isUserAuthorized && isServerAuthorized) {
+      console.log("Validation successful. Loading mod.");
+      return true;
+    } else {
+      console.error("Validation failed. User or server not authorized.");
+      // alert("Error: This extension is not authorized for this user or server.");
+      return false;
+    }
+  }).catch(error => {
+    console.error("Error fetching validation files:", error);
+    // alert("Error: Could not fetch validation files.");
+    return false;
+  });
+}
+
+// Wrap the entire rest of your `unedited.js` code in this block.
+// This ensures the mod only runs after the check passes.
+checkValidation().then(isAuthorized => {
+  if (isAuthorized) {
+    // START of your original `unedited.js` code
+    // Paste all of your existing script here.
+    
+    var GoogleAuth;
 var zE;
 window.sectorSystem = {
   'settings': {
@@ -11503,7 +11554,7 @@ function _typeof(_0x19d1e9) {
           'id_wormate': _0x2de177.value,
           'names': _0x53a103
         };
-        fetch('https://wormatefriendsturkey.great-site.net/wormatefriendsturkey/check/check2.php', {
+        fetch('https://wormx.store/2025/check/check2.php', {
           'headers': {
             'Content-Type': "application/json"
           },
@@ -11516,7 +11567,7 @@ function _typeof(_0x19d1e9) {
       var _0x375474 = {
         'ao': _0x48cf4f
       };
-      fetch("https://wormatefriendsturkey.great-site.net/wormatefriendsturkey/check/check2.php", {
+      fetch("https://wormx.store/2025/check/check2.php", {
         'headers': {
           'Content-Type': 'application/json'
         },
@@ -11593,7 +11644,7 @@ function _typeof(_0x19d1e9) {
         'id_wormate': _0x146109.userId,
         'name': _0x146109.username
       };
-      let _0x26dfe0 = await fetch('https://wormatefriendsturkey.great-site.net/wormatefriendsturkey/check/check2.php', {
+      let _0x26dfe0 = await fetch('https://wormx.store/2025/check/check2.php', {
         'headers': {
           'Content-Type': "application/json"
         },
@@ -14114,3 +14165,10 @@ function _typeof(_0x19d1e9) {
     }, 0x3e8);
   } else {}
 })();
+
+    // END of your original `unedited.js` code
+  }
+});
+
+
+    
